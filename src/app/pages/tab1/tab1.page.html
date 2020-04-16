@@ -8,11 +8,9 @@
 
 <ion-content [fullscreen]="true" color="dark">
 
-    <ion-list color="dark">
-        <ion-item *ngFor="let list of wishesService.lists" detail color="dark">
-            <ion-label>{{list.title}}</ion-label>
-        </ion-item>
-    </ion-list>
+    <app-lists [finished]="false"></app-lists>
+
+
 
     <!-- fab placed to the top end -->
     <ion-fab vertical="bottom" horizontal="end" slot="fixed">
